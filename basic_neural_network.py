@@ -12,15 +12,15 @@ training_outputs = np.array([[0,1,1,0]]).T
 
 np.random.seed(1)  #seeding random number as 1
 
-syanptic_weights = 2 * np.random.random((3,1)) - 1
+synaptic_weights = 2 * np.random.random((3,1)) - 1
 
 print('Random starting synaptic weights :')
-print(syanptic_weights)
+print(synaptic_weights)
 
-for iteration in range (1):
+for iteration in range (10000):
     input_layer = training_inputs
     
-    outputs = sigmoid(np.dot(input_layer, syanptic_weights))
+    outputs = sigmoid(np.dot(input_layer, synaptic_weights))
     
 print('Outputs after training:')
 print(outputs)
