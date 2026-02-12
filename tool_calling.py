@@ -13,7 +13,7 @@ client = Groq(api_key=api_key)   # initialize the model
 
 def get_weather(location):
     """Simple mock function to simulate a weather API"""
-    if "new york" in location.lower():
+    if "kathmandu" in location.lower():
         return json.dumps({"location": "Kathmandu", "temperature": "22°C", "condition": "Sunny"})
     return json.dumps({"location": location, "temperature": "unknown"})
 
